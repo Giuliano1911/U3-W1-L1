@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import ButtonComponent from './components/ButtonComponent'
+import ImageComponent from './components/ImageComponent'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ButtonComponent text="ciaooooo" />
+      <ImageComponent
+        url="https://media.autoaddicted.com/2017/05/2015-dodge-challenger-srt-hellcat-photo-615334-s-986x603-986x580.jpg"
+        alt="Hellcat"
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
